@@ -47,9 +47,17 @@
                     </form>
                 </div>
             </div>
-            <img srcset="images/hero-mobile.jpg 375w,
-            images/hero-desktop.jpg 610w" sizes="(max-width: 600px) 375px,
-            610px" src="images/hero-desktop.jpg" alt="main photo" class="header__photo">
+            <!-- <picture>
+                <source class="header__photo" srcset="images/hero-mobile.jpg" media="(max-width: 750px)" />
+                <source class="header__photo" srcset="images/hero-desktop.jpg" />
+            </picture> -->
+            <picture>
+                <source class="header__photo" srcset="images/hero-mobile.jpg" media="(max-width: 750px)" />
+                <source class="header__photo" srcset="images/hero-desktop.jpg" />
+                <img class="header__photo" src="images/hero-desktop.jpg" alt="main photo" />
+            </picture>
+            <!-- <img srcset="images/hero-mobile.jpg 375w,images/hero-desktop.jpg 610w" sizes="(max-width: 750px) 100vw,
+            610px" src="images/hero-desktop.jpg" alt="main photo" class="header__photo"> -->
             <!-- <img src="images/hero-desktop.jpg" alt="main photo" class="header__photo"> -->
 
         </div>
