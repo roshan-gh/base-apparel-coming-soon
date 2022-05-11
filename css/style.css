@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  background-image: url(../images/bg-pattern-desktop.svg);
+  background-size: 60%;
+  background-repeat: no-repeat; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 18rem; }
+  .header__logo-box {
+    margin-top: 7rem; }
+
+.content {
+  margin-top: 22rem;
+  position: absolute; }
+
+.heading {
+  font-size: 6rem;
+  font-weight: 300;
+  text-transform: uppercase; }
+  .heading--second-part {
+    font-weight: 400; }

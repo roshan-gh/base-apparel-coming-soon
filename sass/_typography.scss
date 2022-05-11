@@ -1,0 +1,9 @@
+.heading {
+    font-size: 6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $--color-primary-desaturated-red;
+    &--second-part {
+        font-weight: 400;
+    }
+}

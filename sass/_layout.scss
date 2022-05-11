@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 18rem;
+    &__logo-box {
+        margin-top: 7rem;
+    }
+}
+
+.content {
+    margin-top: 22rem;
+    position: absolute;
+}
