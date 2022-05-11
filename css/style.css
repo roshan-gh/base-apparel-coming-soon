@@ -10,13 +10,16 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 900px) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   min-height: 100vh;
   background-image: url(../images/bg-pattern-desktop.svg);
-  background-size: 60%;
+  background-size: 60vw;
   background-repeat: no-repeat; }
   @media only screen and (max-width: 750px) {
     body {
@@ -24,6 +27,9 @@ body {
 
 .form {
   margin-top: 3rem; }
+  @media only screen and (max-width: 900px) {
+    .form {
+      margin-top: 1.5rem; } }
   .form__input {
     display: flex; }
   .form__email {
@@ -104,13 +110,15 @@ body {
         margin-top: 3.5rem;
         padding-left: 5rem;
         padding-bottom: 3.5rem; } }
-  @media only screen and (max-width: 1100px) {
-    .header__photo {
-      width: 40vw; } }
-  @media only screen and (max-width: 750px) {
-    .header__photo {
-      order: 1;
-      width: 100vw; } }
+  .header__photo {
+    width: 40vw; }
+    @media only screen and (max-width: 1100px) {
+      .header__photo {
+        width: 40vw; } }
+    @media only screen and (max-width: 750px) {
+      .header__photo {
+        order: 1;
+        width: 100vw; } }
 
 .content {
   margin-top: 22rem;
