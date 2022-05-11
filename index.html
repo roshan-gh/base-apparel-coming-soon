@@ -36,13 +36,28 @@
                 <div class="content__absolute">
                     <h1 class="heading">We're <br><span class="heading--second-part">coming <br>soon</span></h1>
                     <p class="paragraph">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+                    <form action="#" class="form">
+                        <div class="form__input">
+                            <div class="email-box">
+                                <input type="email" class="form__email" id="email" placeholder="Email Address">
+                                <label class="form__email-label" for="email">Please provide a valid email</label>
+                            </div>
+                            <div class="form__error-icon-box">
+                                <img class="form__error-icon" src="images/icon-error.svg" alt="error icon">
+                            </div>
+                            <button class="form__button" type="submit">
+                                <img src="images/icon-arrow.svg" alt="arrow" class="form__icon">
+                            </button>
+
+                        </div>
+                    </form>
                 </div>
             </div>
             <img src="images/hero-desktop.jpg" alt="main photo" class="header__photo">
 
         </div>
     </div>
-    Email Address
+
 
     <footer>
         <p class="attribution">
@@ -50,6 +65,7 @@
             <a href="https://github.com/roshan-gh">Roshan Ghojoghi</a>.
         </p>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>

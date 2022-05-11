@@ -19,6 +19,53 @@ body {
   background-size: 60%;
   background-repeat: no-repeat; }
 
+.form {
+  margin-top: 3rem; }
+  .form__input {
+    display: flex; }
+  .form__email {
+    font-family: inherit;
+    border-radius: 100px;
+    height: 5rem;
+    padding: 2rem 2.5rem;
+    width: 100%;
+    border: 1px solid #efead8; }
+    .form__email-label {
+      display: block;
+      margin-left: 2rem;
+      margin-top: 0.7rem;
+      color: #f96262;
+      font-size: 1.2rem;
+      transition: all 0.3s; }
+    .form__email::placeholder {
+      color: #ce9797; }
+    .form__email:focus {
+      outline: none; }
+      .form__email:focus:invalid {
+        border: 3px solid #f96262; }
+    .form__email:placeholder-shown + .form__email-label {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-4rem); }
+  .form__error-icon-box {
+    margin-top: 1rem;
+    margin-left: -10rem;
+    padding: 0 2rem;
+    visibility: hidden; }
+  .form__button {
+    align-self: flex-start;
+    height: 5rem;
+    border: none;
+    border-radius: 100px;
+    width: 90%;
+    margin-left: -1rem;
+    padding: 0 2rem;
+    background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+    cursor: pointer; }
+
+.email-box {
+  flex: 0 0 90%; }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -56,7 +103,7 @@ body {
         left: 0;
         position: relative;
         text-align: center;
-        padding: 0 2rem; } }
+        padding: 0 3rem; } }
 
 .heading {
   font-size: 6rem;

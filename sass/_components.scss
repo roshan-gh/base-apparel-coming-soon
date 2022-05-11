@@ -1,0 +1,60 @@
+.form {
+    margin-top: 3rem;
+    &__input {
+        display: flex;
+    }
+    &__email {
+        font-family: inherit;
+        border-radius: 100px;
+        height: 5rem;
+        padding: 2rem 2.5rem;
+        width: 100%;
+        border: 1px solid $--color-gray;
+        &-label {
+            display: block;
+            margin-left: 2rem;
+            margin-top: 0.7rem;
+            color: $--color-primary-soft-red;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+        }
+        &::placeholder {
+            color: $--color-primary-red;
+        }
+        &:focus {
+            outline: none;
+            &:invalid {
+                border: 3px solid $--color-primary-soft-red;
+            }
+        }
+        &:placeholder-shown+&-label {
+            //+ is for sibling selector (two html element is at the same level not child of each other
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-4rem);
+        }
+    }
+    &__error-icon-box {
+        margin-top: 1rem;
+        margin-left: -10rem;
+        padding: 0 2rem;
+        visibility: hidden;
+    }
+    &__error-icon {}
+    &__button {
+        align-self: flex-start;
+        height: 5rem;
+        border: none;
+        border-radius: 100px;
+        width: 90%;
+        margin-left: -1rem;
+        padding: 0 2rem;
+        background-image: $--linear-gradient-1;
+        cursor: pointer;
+    }
+    &__icon {}
+}
+
+.email-box {
+    flex: 0 0 90%;
+}
