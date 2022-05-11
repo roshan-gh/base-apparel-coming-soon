@@ -62,9 +62,20 @@ body {
     padding: 0 2rem;
     background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
     cursor: pointer; }
+    .form__button:active {
+      background-image: linear-gradient(135deg, #fdeded, #f4b8b8);
+      box-shadow: 0 2rem 2rem rgba(206, 151, 151, 0.4); }
 
 .email-box {
   flex: 0 0 90%; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem; }
+
+.attribution a {
+  color: #3e52a3; }
 
 .header {
   display: flex;

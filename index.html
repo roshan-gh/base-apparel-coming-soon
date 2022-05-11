@@ -14,14 +14,7 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
-        
-        .attribution a {
-            color: hsl(228, 45%, 44%);
-        }
+
     </style>
 </head>
 
@@ -53,7 +46,10 @@
                     </form>
                 </div>
             </div>
-            <img src="images/hero-desktop.jpg" alt="main photo" class="header__photo">
+            <img srcset="images/hero-mobile.jpg 375w,
+            images/hero-desktop.jpg 610w" sizes="(max-width: 600px) 375px,
+            610px" src="images/hero-desktop.jpg" alt="main photo" class="header__photo">
+            <!-- <img src="images/hero-desktop.jpg" alt="main photo" class="header__photo"> -->
 
         </div>
     </div>

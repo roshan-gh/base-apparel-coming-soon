@@ -51,10 +51,25 @@
         padding: 0 2rem;
         background-image: $--linear-gradient-1;
         cursor: pointer;
+        &:active {
+            background-image: $--linear-gradient-3;
+            box-shadow: 0 2rem 2rem rgba($--color-primary-red, 0.4);
+        }
     }
     &__icon {}
 }
 
 .email-box {
     flex: 0 0 90%;
+}
+
+//Footer
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }

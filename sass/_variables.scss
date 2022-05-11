@@ -5,3 +5,4 @@ $--color-black: #000;
 $--color-gray: #efead8;
 $--linear-gradient-1: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 $--linear-gradient-2: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+$--linear-gradient-3: linear-gradient(135deg, lighten(hsl(0, 80%, 86%), 10%), lighten(hsl(0, 74%, 74%), 10%));
