@@ -2,20 +2,24 @@
     display: flex;
     justify-content: space-between;
     padding-left: 18rem;
-    @media only screen and (max-width: 750px) {
+    @media only screen and (max-width: 600px) {
         flex-direction: column;
         align-items: center;
+        padding-left: 0;
     }
     &__logo-box {
         margin-top: 7rem;
-        @media only screen and (max-width: 750px) {
+        @media only screen and (max-width: 600px) {
             order: 0;
             align-self: flex-start;
+            padding-left: 5rem;
+            padding-bottom: 5rem;
         }
     }
     &__photo {
-        @media only screen and (max-width: 750px) {
+        @media only screen and (max-width: 600px) {
             order: 1;
+            width: 100vw;
         }
     }
 }
@@ -23,11 +27,18 @@
 .content {
     margin-top: 22rem;
     position: relative;
-    @media only screen and (max-width: 750px) {
+    @media only screen and (max-width: 600px) {
         order: 2;
+        margin-top: 5rem;
     }
     &__absolute {
         position: absolute;
         left: -43.5rem;
+        @media only screen and (max-width: 600px) {
+            left: 0;
+            position: relative;
+            text-align: center;
+            padding: 0 2rem;
+        }
     }
 }

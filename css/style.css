@@ -23,29 +23,40 @@ body {
   display: flex;
   justify-content: space-between;
   padding-left: 18rem; }
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 600px) {
     .header {
       flex-direction: column;
-      align-items: center; } }
+      align-items: center;
+      padding-left: 0; } }
   .header__logo-box {
     margin-top: 7rem; }
-    @media only screen and (max-width: 750px) {
+    @media only screen and (max-width: 600px) {
       .header__logo-box {
         order: 0;
-        align-self: flex-start; } }
-  @media only screen and (max-width: 750px) {
+        align-self: flex-start;
+        padding-left: 5rem;
+        padding-bottom: 5rem; } }
+  @media only screen and (max-width: 600px) {
     .header__photo {
-      order: 1; } }
+      order: 1;
+      width: 100vw; } }
 
 .content {
   margin-top: 22rem;
   position: relative; }
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 600px) {
     .content {
-      order: 2; } }
+      order: 2;
+      margin-top: 5rem; } }
   .content__absolute {
     position: absolute;
     left: -43.5rem; }
+    @media only screen and (max-width: 600px) {
+      .content__absolute {
+        left: 0;
+        position: relative;
+        text-align: center;
+        padding: 0 2rem; } }
 
 .heading {
   font-size: 6rem;
@@ -57,9 +68,17 @@ body {
   .heading--second-part {
     font-weight: 600;
     color: #000; }
+  @media only screen and (max-width: 600px) {
+    .heading {
+      font-size: 4rem;
+      letter-spacing: 1.5rem; } }
 
 .paragraph {
   color: #ce9797;
   font-size: 2rem;
   width: 100%;
   line-height: 1.5; }
+  @media only screen and (max-width: 600px) {
+    .paragraph {
+      font-size: 1.8rem;
+      line-height: 1.4; } }
