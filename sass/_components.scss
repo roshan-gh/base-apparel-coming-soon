@@ -40,7 +40,6 @@
         padding: 0 2rem;
         visibility: hidden;
     }
-    &__error-icon {}
     &__button {
         align-self: flex-start;
         height: 5rem;
@@ -56,7 +55,6 @@
             box-shadow: 0 2rem 2rem rgba($--color-primary-red, 0.4);
         }
     }
-    &__icon {}
 }
 
 .email-box {

@@ -18,6 +18,9 @@ body {
   background-image: url(../images/bg-pattern-desktop.svg);
   background-size: 60%;
   background-repeat: no-repeat; }
+  @media only screen and (max-width: 750px) {
+    body {
+      background-image: none; } }
 
 .form {
   margin-top: 3rem; }
@@ -81,20 +84,26 @@ body {
   display: flex;
   justify-content: space-between;
   padding-left: 18rem; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1100px) {
+    .header {
+      padding-left: 9rem; } }
+  @media only screen and (max-width: 750px) {
     .header {
       flex-direction: column;
       align-items: center;
       padding-left: 0; } }
   .header__logo-box {
     margin-top: 7rem; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 750px) {
       .header__logo-box {
         order: 0;
         align-self: flex-start;
         padding-left: 5rem;
         padding-bottom: 5rem; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1100px) {
+    .header__photo {
+      width: 40vw; } }
+  @media only screen and (max-width: 750px) {
     .header__photo {
       order: 1;
       width: 100vw; } }
@@ -102,14 +111,22 @@ body {
 .content {
   margin-top: 22rem;
   position: relative; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1100px) {
+    .content {
+      margin-top: 15rem; } }
+  @media only screen and (max-width: 750px) {
     .content {
       order: 2;
-      margin-top: 5rem; } }
+      margin-top: 0;
+      padding-top: 4rem;
+      background-color: #f7eeee; } }
   .content__absolute {
     position: absolute;
     left: -43.5rem; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 1100px) {
+      .content__absolute {
+        left: -35rem; } }
+    @media only screen and (max-width: 750px) {
       .content__absolute {
         left: 0;
         position: relative;
@@ -126,7 +143,11 @@ body {
   .heading--second-part {
     font-weight: 600;
     color: #000; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1100px) {
+    .heading {
+      font-size: 5rem;
+      letter-spacing: 1.7rem; } }
+  @media only screen and (max-width: 750px) {
     .heading {
       font-size: 4rem;
       letter-spacing: 1.5rem; } }
@@ -136,7 +157,11 @@ body {
   font-size: 2rem;
   width: 100%;
   line-height: 1.5; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1100px) {
+    .paragraph {
+      font-size: 1.9rem;
+      line-height: 1.45; } }
+  @media only screen and (max-width: 750px) {
     .paragraph {
       font-size: 1.8rem;
       line-height: 1.4; } }
