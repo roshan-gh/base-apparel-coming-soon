@@ -2,8 +2,18 @@
     font-size: 6rem;
     font-weight: 300;
     text-transform: uppercase;
-    color: $--color-primary-desaturated-red;
+    color: $--color-primary-red;
+    letter-spacing: 2rem;
+    margin-bottom: 3rem;
     &--second-part {
-        font-weight: 400;
+        font-weight: 600;
+        color: $--color-black;
     }
+}
+
+.paragraph {
+    color: $--color-primary-red;
+    font-size: 2rem;
+    width: 100%;
+    line-height: 1.5;
 }

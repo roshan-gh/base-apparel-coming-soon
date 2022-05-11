@@ -23,16 +23,43 @@ body {
   display: flex;
   justify-content: space-between;
   padding-left: 18rem; }
+  @media only screen and (max-width: 750px) {
+    .header {
+      flex-direction: column;
+      align-items: center; } }
   .header__logo-box {
     margin-top: 7rem; }
+    @media only screen and (max-width: 750px) {
+      .header__logo-box {
+        order: 0;
+        align-self: flex-start; } }
+  @media only screen and (max-width: 750px) {
+    .header__photo {
+      order: 1; } }
 
 .content {
   margin-top: 22rem;
-  position: absolute; }
+  position: relative; }
+  @media only screen and (max-width: 750px) {
+    .content {
+      order: 2; } }
+  .content__absolute {
+    position: absolute;
+    left: -43.5rem; }
 
 .heading {
   font-size: 6rem;
   font-weight: 300;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #ce9797;
+  letter-spacing: 2rem;
+  margin-bottom: 3rem; }
   .heading--second-part {
-    font-weight: 400; }
+    font-weight: 600;
+    color: #000; }
+
+.paragraph {
+  color: #ce9797;
+  font-size: 2rem;
+  width: 100%;
+  line-height: 1.5; }
